@@ -1,0 +1,13 @@
+#+title: counsel-hatena-bookmark
+
+counsel-hatena-bookmark はivyを利用して自分の[[https://b.hatena.ne.jp][はてなブックマーク]]を検索するものです。
+
+外部コマンドとして =w3m= を用います。
+=w3m= ではてなブックマークにログインしておいてください。
+
+#+begin_src emacs-lisp
+  (leaf counsel-hatena-bookmark
+    ;; :ensure t ;; ←まだmelpa登録してないのでこれはできない
+    :bind
+    ("C-c h" . counsel-hatena-bookmark))
+#+end_src
